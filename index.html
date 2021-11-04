@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <img src="./images/bg.jpg" id="bg" />
+      <img src="./images/bats.png" id="bats" />
+      <img src="./images/castle.png" id="castle" />
+      <img src="./images/img.png" id="img" />
+      <img src="./images/wolf.png" id="wolf" />
+    </section>
+    <div class="sec">
+      <div class="content">
+        <h2>Happy Halloween</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+          iusto nisi soluta omnis, sed natus quis autem consequuntur iste,
+          inventore adipisci delectus sunt, commodi nobis. Consequatur, magnam
+          itaque! Iure eaque, vel ipsa sapiente praesentium doloremque
+          aspernatur, eveniet tempora, cumque quia mollitia ratione saepe neque
+          facilis fugiat pariatur provident ducimus beatae eligendi quaerat
+          reiciendis voluptas modi! Sunt mollitia nam, ducimus facere deleniti
+          maxime! Dignissimos dolorum aliquid quasi molestias asperiores placeat
+          nihil quibusdam numquam alias accusantium? Quibusdam labore reiciendis
+          laboriosam magnam qui in, voluptates quia deserunt fugiat commodi
+          accusantium tempore ducimus quae aliquam cum eum. Impedit dicta labore
+          blanditiis deleniti. Mollitia, consequuntur reiciendis. Rerum quam
+          tempore fugiat amet modi, asperiores quod necessitatibus quaerat eius
+          temporibus odit distinctio deleniti delectus facilis totam id
+          laboriosam doloribus enim optio, recusandae quidem iusto porro? Ut
+          aliquid cumque atque nobis quisquam quasi molestiae veritatis tempore
+          recusandae blanditiis possimus, facilis maxime quam expedita totam
+          natus illo vitae odit saepe facere, cupiditate animi, impedit veniam.
+          Hic doloremque, molestias nostrum voluptas similique nemo ipsam id
+          ipsum? Aut magni esse earum quas laborum consequatur necessitatibus
+          deleniti explicabo nisi laboriosam quos accusamus dicta eveniet dolor
+          enim eaque hic beatae natus rerum aspernatur velit, ea consectetur.
+          Aut minus eos iure optio accusantium maiores, incidunt perferendis
+          dolorem sunt aspernatur saepe nisi, corrupti tenetur autem
+          necessitatibus praesentium. Libero quisquam doloremque, quaerat ab
+          quibusdam, magni modi id saepe molestiae iste vero officia amet autem
+          magnam facere minus deleniti commodi adipisci nisi earum, iusto totam?
+          Illum, consequuntur quod! Aspernatur, repudiandae! Atque et culpa
+          dicta vitae possimus delectus maxime dolores impedit laudantium in
+          dolorem non quasi aperiam, adipisci modi praesentium tempore!
+          Quibusdam dolorem maiores ea ducimus a, amet quis ad consequuntur
+          assumenda dolores consequatur nihil, delectus tenetur nemo eaque
+          magnam labore, fuga perspiciatis rerum nulla veritatis reprehenderit
+          eveniet! Debitis fugit aut alias architecto nemo explicabo ut,
+          reprehenderit accusamus.
+        </p>
+      </div>
+    </div>
+    <!-- greensock animation platform -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.to("#img", {
+        scrollTrigger: {
+          scrub: 0.5,
+        },
+        x: 1500,
+        y: 500,
+      });
+      gsap.from("#wolf", {
+        scrollTrigger: {
+          scrub: 0.5,
+        },
+        x: 400,
+      });
+      gsap.from("#castle", {
+        scrollTrigger: {
+          scrub: 0.5,
+        },
+        x: -100,
+      });
+      gsap.to("#bats", {
+        scrollTrigger: {
+          scrub: 0.5,
+        },
+        scale: 1.5,
+      });
+    </script>
+  </body>
+</html>
